@@ -14,6 +14,7 @@ function limpa_formulario_cep() {
     document.getElementById('bairro').value = ("");
     document.getElementById('cidade').value = ("");
     document.getElementById('uf').value = ("");
+    document.getElementById('numero').value = ("");
 }
 
 function apiCallback(conteudo) {
@@ -23,6 +24,7 @@ function apiCallback(conteudo) {
         document.getElementById('bairro').value = (conteudo.bairro);
         document.getElementById('cidade').value = (conteudo.localidade);
         document.getElementById('uf').value = (conteudo.uf);
+        document.getElementById('numero').value = ('');
         // ativa o submit do form quando o CEP for informado
         document.getElementById('cadastrar').setAttribute('type', 'submit')
         removeOculto('adress');

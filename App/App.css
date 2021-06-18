@@ -12,11 +12,9 @@ body {
 }
 
 .header {
-    background-color: #262626;
     height: 100px;
     display: flex;
     align-items: center;
-    color: white;
 }
 
 .header :is(h1) {
@@ -88,10 +86,21 @@ nav a:hover {
     padding: 10px;
     box-shadow: 0px 0px 8px 1px #ccc;
     background-color: white;
+    font-weight: bold;
 }
 
 .opcao:first-child {
-    background-color: #C6F8B5;
+    background-color: #343a40;
+}
+
+.opcao:first-child div {
+    background-color: rgb(203, 197, 191);
+    color: #343a40;
+}
+
+.opcao:first-child div:hover {
+    background-color: #E8E8E8;
+    color: #343a40;
 }
 
 .opcao a {
@@ -107,7 +116,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
+    width: 130px;
     height: 20px;
     background-color: #343a40;
     color: white;
@@ -213,7 +222,7 @@ form .cards .card {
     margin: 0;
 }
 
-.botaoexcluir {
+.botaoexcluir, .botaoeditar {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     background-color: #CF0e0e;
@@ -231,10 +240,32 @@ form .cards .card {
     cursor: pointer;
 }
 
+.botaoeditar {
+    background-color: #044514
+}
+
+.botaoeditar img {
+    width: 100%;
+}
+
+.botaoeditar:hover {
+    background-color: green;
+}
+
 .botaoexcluir:hover {
     background-color: #f00;
 }
 
 .excluir .items {
     width: calc(100% - 50px);
+}
+
+.cancel {
+    background-color: white;
+    color: #343a40;
+    border: 1px solid #343a40;
+}
+
+.cancel:hover {
+    background-color: #E8E8E8;
 }

@@ -1,6 +1,6 @@
 // verificar se o input esta vazio, para ocultar ou exibir campos
-let inputs = document.querySelectorAll('#cep');
-for (let i = 0; i < inputs.length; i++) {
+var inputs = document.querySelectorAll('#cep');
+for (var i = 0; i < inputs.length; i++) {
     inputs[i].addEventListener('input', function () {
         if (this.value === '') {
             document.getElementById('cadastrar').setAttribute('type', 'button')
@@ -14,7 +14,7 @@ for (let i = 0; i < inputs.length; i++) {
 
 // debugger: para não usar 2 submits no furmulario, o botão de buscar é acionado
 // caso o usuário aperte enter, sendo assim, o submit fica somente para o botão cadastrar
-let pressenter = document.getElementById('cep')
+var pressenter = document.getElementById('cep')
 pressenter && pressenter.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
         e.preventDefault()
@@ -38,6 +38,8 @@ function confirma(value) {
     // retorna true se confirmado, ou false se cancelado
     if (value === "adicionar")
         return confirm('Tem certeza que deseja cadastrar este cliente?');
+    if (value === 'editar')
+        return confirm('Tem certeza que deseja editar os dados  deste cliente?');
 }
 
 // alternar entre campo de pesquisa por CPF ou por Nome

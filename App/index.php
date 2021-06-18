@@ -22,8 +22,8 @@
 
         <div class="opcao">
             <img src="../App/Images/editar-cliente.png" />
-            <a href="#">
-                <div> Alterar</div>
+            <a href="../public_html/editar_cliente.php">
+                <div>Editar</div>
             </a>
         </div>
 
