@@ -14,4 +14,4 @@ Foram considerados que o cliente pode ter apenas um endereço, e um endereço po
 Comando para criar o BD: crudWithViaCEPApi.sql
 
 **- MODELO LÓGICO -**
-<img src="https://github.com/oiesc/crud-with-ViaCep-API/blob/main/modelo%20l%C3%B3gico.png?raw=true" alt="Modelo Lógico />
+![](/modelo%20lógico.png)
