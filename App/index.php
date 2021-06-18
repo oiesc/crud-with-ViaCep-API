@@ -15,7 +15,7 @@
 
         <div class="opcao">
             <img src="../App/Images/add-cliente.png" />
-            <a href="../public_html/add_cliente.php">
+            <a href="../public_html/cadastro_cliente.php">
                 <div>Cadastrar</div>
             </a>
         </div>
@@ -29,14 +29,14 @@
 
         <div class="opcao">
             <img src="../App/Images/buscar-cliente.png" />
-            <a href="#">
+            <a href="../public_html/consulta_cliente.php">
                 <div>Consultar</div>
             </a>
         </div>
 
         <div class="opcao">
             <img src="../App/Images/remover-cliente.png" />
-            <a href="#">
+            <a href="../public_html/excluir_cliente.php">
                 <div>Excluir</div>
             </a>
         </div>

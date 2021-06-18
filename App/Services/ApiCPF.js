@@ -1,9 +1,3 @@
-// caso pressione 'enter' no input do CEP, acionar a pesquisa
-function getEnterKey() {
-    if (e => e.key === 'Enter')
-        pesquisacep(cep.value);
-}
-
 // adicionar classe oculta nos elementos
 function adicionaOculto(id) {
     document.getElementById(id).classList.add('oculto');
@@ -29,12 +23,16 @@ function apiCallback(conteudo) {
         document.getElementById('bairro').value = (conteudo.bairro);
         document.getElementById('cidade').value = (conteudo.localidade);
         document.getElementById('uf').value = (conteudo.uf);
+        // ativa o submit do form quando o CEP for informado
+        document.getElementById('cadastrar').setAttribute('type', 'submit')
         removeOculto('adress');
         adicionaOculto('cepinvalido');
         adicionaOculto('cepnaoencontrado');
     } //end if.
     else {
         //CEP não Encontrado.
+        // remove o submit do form, para evitar de enviar caso o usuario pressione enter
+        document.getElementById('cadastrar').setAttribute('type', 'button')
         limpa_formulario_cep();
         removeOculto('cepnaoencontrado');
         adicionaOculto('adress');
@@ -69,6 +67,7 @@ function pesquisacep(valor) {
         else {
             //cep é inválido.
             limpa_formulario_cep();
+            document.getElementById('cadastrar').setAttribute('type', 'button')
             removeOculto('cepinvalido');
             adicionaOculto('adress');
             adicionaOculto('cepnaoencontrado');
@@ -76,6 +75,7 @@ function pesquisacep(valor) {
     } //end if.
     else {
         //cep sem valor, limpa formulário.
+        document.getElementById('cadastrar').setAttribute('type', 'button')
         limpa_formulario_cep();
         adicionaOculto('adress');
         adicionaOculto('cepnaoencontrado');
