@@ -1,4 +1,4 @@
-# crud-with-ViaCep-API
+# Gestão de Clientes com API da ViaCEP
 
 Sistema simples de cadastro do de clientes onde o endereço deve ser preenchido a partir do consumo da API dos correios.
 Sistema feito em PHP (v 7.2), utilizando MySQL como banco de dados.
@@ -14,4 +14,5 @@ Foram considerados que o cliente pode ter apenas um endereço, e um endereço po
 Comando para criar o BD: crudWithViaCEPApi.sql
 
 **- MODELO LÓGICO -**
+
 ![](/modelo%20lógico.png)
