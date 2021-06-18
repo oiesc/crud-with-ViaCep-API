@@ -16,7 +16,7 @@ Comando para criar o BD: crudWithViaCEPApi.sql
 
 **- MODELO LÓGICO -**
 
-![](/prints/modelo%20lógico.png)
+![](/modelo%20lógico.png)
 
 Necessário ter um servidor local (Apache) e MySQL instalados.
 
@@ -28,3 +28,5 @@ O objetivo desse sistema é estudar as operações de requisitar na API e fazer 
 Para mostrar essas operações, foram usados cards, onde cada card tem uma opção especifica, conforme imagem abaixo.
 
 ![](/prints/crud%20with%20viacep%20api%20-%20home.png)
+
+Verifique a pasta prints para visualizar as páginas principais.
