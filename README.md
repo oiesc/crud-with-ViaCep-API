@@ -12,7 +12,7 @@ O Consumo da API é feito através de JavaScript.
 
 Foram considerados que o cliente pode ter apenas um endereço, e um endereço pode pertencer a 1-n clientes; porém, no sistema de cadastro, não foi implementado a opção de aproveitar o endereço para outro cliente, ou seja: todo novo cliente vai ter seu novo endereço.
 
-Arquivo com comando para criar o BD: crudWithViaCEPApi.sql (caso queira, há um backup com 4 clientes já cadastrados).
+Arquivo com comando para criar o BD: **crudWithViaCEPApi.sql** ou **backup-crudWithViaCEPApi.sql**.
 
 
 **- MODELO LÓGICO -**
