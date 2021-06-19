@@ -26,7 +26,7 @@ Necessário ter um servidor local (Apache) e MySQL instalados.
 2. Acessar o sistema através da página inicial (**index.php** na pasta **public_html** - localhost/crud-with-ViaCep-API/public_html/index.php)
 
 O objetivo desse sistema é estudar as operações de requisitar na API e fazer operações básicas (CRUD) no banco. 
-Para mostrar essas operações, foram usados cards, onde cada card tem uma opção especifica, conforme imagem abaixo.
+Para separar essas operações, foram utilizados cards, onde cada card tem uma operação especifica, conforme imagem abaixo.
 
 ![](/prints/crud%20with%20viacep%20api%20-%20home.png)
 
