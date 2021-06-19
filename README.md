@@ -25,7 +25,7 @@ Necessário ter um servidor local (Apache) e MySQL instalados.
 1. Criar o BD no MySQL (utilizando os comandos disponíveis neste repositório), alterar o arquivo **config.php** e o arquivo **Apps/Services/Conexao.php)** para acessar o BD.
 2. Acessar o sistema através da página inicial (**index.php** na pasta **public_html** - localhost/crud-with-ViaCep-API/public_html/index.php)
 
-O objetivo desse sistema é estudar as operações de requisitar na API e fazer operações básicas (CRUD no banco. 
+O objetivo desse sistema é estudar as operações de requisitar na API e fazer operações básicas (CRUD) no banco. 
 Para mostrar essas operações, foram usados cards, onde cada card tem uma opção especifica, conforme imagem abaixo.
 
 ![](/prints/crud%20with%20viacep%20api%20-%20home.png)
